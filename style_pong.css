@@ -1,0 +1,41 @@
+body {
+	background: black;
+	color: white;
+	width: 800px;
+	margin: 20px auto;
+}
+div.table {
+	width: 800px;
+	height: 400px;
+	border: 10px solid white;
+	position: relative;
+}
+div.score {
+	font-family: monospace;
+	font-size: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+div.score div.player2 {
+	text-align: right;
+}
+div.table div {
+	height: 78px;
+	width: 10px;
+	background: white;
+	position: absolute;
+	top: 0;
+	border: 1px solid black;	
+	transition: top 0.04s linear, left 0.04s linear;
+}
+div.table div.p1 {
+	left: 10px;	
+}
+div.table div.p2 {
+	right: 10px;	
+}
+div.table div.ball {
+	height: 10px;
+	left: 40px;
+	top: 60px;	
+}
